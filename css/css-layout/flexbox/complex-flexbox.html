@@ -5,21 +5,21 @@
     <title>Complex flexbox example</title>
     <style>
       html {
-        font-family: sans-serif;
+        font-family: 'Roboto', 'Chivo', 'Arimo', 'Helvetica';
       }
 
       body {
-        margin: 0;
+        margin: 30px;
       }
 
       header {
-        background: purple;
+        background: red;
         height: 100px;
       }
 
       h1 {
         text-align: center;
-        color: white;
+        color: black;
         line-height: 100px;
         margin: 0;
       }
@@ -27,7 +27,7 @@
       article {
         padding: 10px;
         margin: 10px;
-        background: aqua;
+        background: blue;
       }
 
       /* Add your flexbox CSS below here */
@@ -40,13 +40,13 @@
         flex: 1 200px;
       }
 
-      article:nth-of-type(3) {
-        flex: 3 200px;
+      article:nth-of-type(2) {
+        flex: 2 200px;
         display: flex;
         flex-flow: column;
       }
 
-      article:nth-of-type(3) div:first-child {
+      article:nth-of-type(2) div:first-child {
         flex: 1 100px;
         display: flex;
         flex-flow: row wrap;
